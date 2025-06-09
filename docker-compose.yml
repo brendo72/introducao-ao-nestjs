@@ -1,0 +1,12 @@
+services:
+
+  postgres:
+    image: postgres
+    container_name: postgresdb
+    environment:
+      POSTGRES_USER: jonasdb
+      POSTGRES_PASSWORD: passworddb
+      POSTGRES_DB: nestdb
+    ports:
+      - "5432:5432"
+
