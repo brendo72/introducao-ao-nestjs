@@ -1,0 +1,17 @@
+1. Fazer um repositório no github e criou
+dentro do repositório o projeto nextjs
+ -> npx create-next-app@latest [nome do repositório]
+
+ 2. Durante a instalação, selecione as opções: 
+   - TypeScript
+   - ESLint
+   - Tailwind CSS
+   - src directory
+   - App Router
+   - Import alias: @/*
+
+3. acessar o diretório cd [nome do repositório] 
+
+4. Inicior o servidor dev: 'npm run dev'
+
+5. Abra o navegador e acesse: http://localhost:3000
