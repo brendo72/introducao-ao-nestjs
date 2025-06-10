@@ -162,11 +162,6 @@ Neste guia, vamos configurar um ambiente de desenvolvimento completo para uma ap
 ### Passo 7: Usando o Prisma Service
 
 1. Agora você pode injetar o `PrismaService` em qualquer módulo ou serviço do seu projeto NestJS.
-   Por exemplo, crie um serviço de usuário:
-
-   ```bash
-   nest generate service user
-   ```
 
 2. Edite o arquivo `user/user.service.ts` para usar o PrismaService:
 
