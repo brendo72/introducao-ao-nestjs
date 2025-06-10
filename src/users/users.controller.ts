@@ -10,25 +10,13 @@ export class UsersController {
         this.userService = userService
     }
 
-    @Get()
-    findAllUsers(){
-        return this.userService.findAll()
-    }
-
-    @Get(':id')
-    findOneUser(@Param('id') id:string){
-        return this.userService.findOne(parseInt(id))
-    }
-
+    // Rota criar usuário
     @Post()
-    createUser(@Body() user: {name:string, email:string}){
-        return this.userService.create(user)
+    create(@Body() data: any){
+        return this.userService.create(data)
     }
 
-    /**Exercício rápido: 
-        Crie uma rota para atualizar usuário, recebendo 
-        o Id do usuário a ser atualizado e as novas
-        informações de usuário.  */
+    
 
 
 }
