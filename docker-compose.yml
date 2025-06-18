@@ -3,10 +3,11 @@ services:
   postgres:
     image: postgres
     container_name: postgresdb
+    env_file: .env
     environment:
-      POSTGRES_USER: jonasdb
-      POSTGRES_PASSWORD: passworddb
-      POSTGRES_DB: nestdb
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
 
