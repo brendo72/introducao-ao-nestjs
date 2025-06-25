@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { ValidationPipe } from "@nestjs/common"
 
 async function bootstrap() {
   
@@ -16,6 +17,16 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config)
   SwaggerModule.setup('api', app, document)
+
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true, // Remova propriedades não decoradas no DTO
+      forbidNonWhitelisted: true, /* Retorna erro se 
+      enviar propriedades não permitidas*/
+      transform: true, // Tranforma os tipos automaticamente 
+      // EX:(string -> number)
+    })
+  )
 
   await app.listen(3000)
 }
