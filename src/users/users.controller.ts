@@ -14,13 +14,13 @@ export class UsersController {
     }
 
     // Rota criar usuário
-    @Post()
-    @ApiOperation({summary: 'Criar um novo usuário'})
-    @ApiBody({type: CreateUserDto})
-    @ApiResponse({status:201, description: 'Usuário criado com sucesso!'})
-    create(@Body() data: CreateUserDto){
-        return this.userService.create(data)
-    }
+    // @Post()
+    // @ApiOperation({summary: 'Criar um novo usuário'})
+    // @ApiBody({type: CreateUserDto})
+    // @ApiResponse({status:201, description: 'Usuário criado com sucesso!'})
+    // create(@Body() data: CreateUserDto){
+    //     return this.userService.create(data)
+    // }
 
     @Get()
     findAll(){
