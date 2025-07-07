@@ -1,9 +1,12 @@
-import {Body, Controller, Get, Param, Post, Put, Delete} from '@nestjs/common'
+import {Body, Controller, Get, Param, Post, Put, Delete, UseGuards} from '@nestjs/common'
 import { UserService } from './users.service'
 import { CreateUserDto } from './dto/create-user.dto'
-import { ApiOperation, ApiBody, ApiResponse, ApiParam } from '@nestjs/swagger'
+import { ApiOperation, ApiBody, ApiResponse, ApiParam, ApiBearerAuth } from '@nestjs/swagger'
 import { UpdateUserDto } from './dto/update-user.dto'
+import { JwtAuthGuard } from 'src/auth/jwt.guard'
 
+@UseGuards(JwtAuthGuard)
+@ApiBearerAuth()
 @Controller('/user')
 export class UsersController {
 
