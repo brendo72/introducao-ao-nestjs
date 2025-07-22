@@ -33,6 +33,15 @@ export class AuthController {
     }
 
     @Post('google')
+    @ApiBody({
+        description: 'Google ID Token',
+        schema: {
+            type: 'object',
+            properties: {
+                idToken: { type: 'string' }
+            }
+        }
+    })
     async loginWithGoogle(@Body() body: {idToken: string}){
         const access_token = await this.googleService.verify(
             body.idToken
