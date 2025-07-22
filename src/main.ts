@@ -36,6 +36,11 @@ async function bootstrap() {
       // EX:(string -> number)
     })
   )
+  app.enableCors({
+    origin: process.env.CORS_ORIGIN || '*', // Permitir todas as origens
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
+    credentials: true, // Permitir credenciais
+  });
 
   await app.listen(process.env.API_PORT ?? 3000)
 }
