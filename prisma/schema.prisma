@@ -36,6 +36,7 @@ model Place {
   latitude Float
   longitude Float
   images Json[]
+  created_at DateTime @default(now())
 }
 
 enum placeType {
