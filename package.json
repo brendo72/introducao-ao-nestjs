@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "introducao-ao-nest-js",
+=======
+  "name": "introducao-ao-nestjs",
+>>>>>>> 3b3fb707fe826aa3a47985a4a3567715679fdbf2
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -22,6 +26,7 @@
   "dependencies": {
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
+<<<<<<< HEAD
     "@nestjs/jwt": "^11.0.0",
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^11.0.1",
@@ -40,12 +45,20 @@
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "swagger-ui-express": "^5.0.1"
+=======
+    "@nestjs/platform-express": "^11.0.1",
+    "@prisma/client": "^6.9.0",
+    "prisma": "^6.9.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+>>>>>>> 3b3fb707fe826aa3a47985a4a3567715679fdbf2
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
+<<<<<<< HEAD
     "@nestjs/testing": "^11.1.6",
     "@swc/cli": "^0.6.0",
     "@swc/core": "^1.10.7",
@@ -54,6 +67,14 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
     "@types/passport-jwt": "^4.0.1",
+=======
+    "@nestjs/testing": "^11.0.1",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.7",
+>>>>>>> 3b3fb707fe826aa3a47985a4a3567715679fdbf2
     "@types/supertest": "^6.0.2",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
@@ -63,7 +84,11 @@
     "prettier": "^3.4.2",
     "source-map-support": "^0.5.21",
     "supertest": "^7.0.0",
+<<<<<<< HEAD
     "ts-jest": "^29.4.1",
+=======
+    "ts-jest": "^29.2.5",
+>>>>>>> 3b3fb707fe826aa3a47985a4a3567715679fdbf2
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
